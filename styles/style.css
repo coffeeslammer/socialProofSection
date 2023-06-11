@@ -13,12 +13,24 @@
  }
 
  main {
-     padding: 80px 16px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding: 80px 1rem;
+     gap: 16px;
+ }
+
+ main>* {
+     flex-basis: 100%;
  }
 
  body {
      font-family: 'League Spartan', sans-serif;
      text-align: center;
+ }
+
+ .heading-intro {
+     max-width: 375px;
  }
 
  .heading-intro p {
@@ -37,16 +49,21 @@
      margin-bottom: 32px;
  }
 
+ .rating-section {
+     display: grid;
+     max-width: 375px;
+     gap: 16px;
+ }
+
  .rating-container {
      display: flex;
      flex-flow: column;
      align-items: center;
      background-color: #F7F2F7;
+     padding-left: 48px;
+     padding-right: 48px;
      padding-bottom: 16px;
-     margin-bottom: 16px;
-     border-radius: 8px;
-
-
+     border-radius: .5rem;
  }
 
  .rating-container h2 {
@@ -56,29 +73,26 @@
  }
 
  .ratings {
-
      width: 100px;
-     padding-right: 8px;
      height: 40px;
-     padding-top: 16px;
      background-image: url("../images/icon-star.svg");
      background-repeat: space no-repeat;
      background-position: center center;
  }
 
  .verified-buyer-card {
+     max-width: 375px;
      background-color: hsl(300, 43%, 22%);
      color: white;
-     border-radius: 8px;
+     border-radius: .5rem;
      text-align: start;
-     padding-top: 32px;
-     padding-bottom: 32px;
-     margin-top: 32px;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
  }
 
  .verified-buyer-card figure {
-     margin-left: 32px;
-     margin-right: 32px;
+     margin-left: 2rem;
+     margin-right: 2rem;
  }
 
  .flex-div {
@@ -87,10 +101,10 @@
  }
 
  .verified-buyer-card img {
-     width: 40px;
-     height: 40px;
+     width: 2.5rem;
+     height: 2.5rem;
      border-radius: 50%;
-     margin-right: 24px;
+     margin-right: 1.5rem;
  }
 
  .verified-buyer-card figcaption {
@@ -101,13 +115,13 @@
  .verified-buyer-card span {
      color: hsl(333, 80%, 67%);
      display: inline-block;
-     margin-top: 6px;
+     margin-top: .375rem;
      font-size: 1.0625rem;
      font-weight: 400;
  }
 
  .verified-buyer-card blockquote {
-     margin-top: 24px;
+     margin-top: 1.5rem;
      font-size: 1.0625rem;
      line-height: 1.3;
      font-weight: 500;
