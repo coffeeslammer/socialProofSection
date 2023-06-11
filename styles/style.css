@@ -10,8 +10,13 @@
      padding: 0;
  }
 
+ main {
+     padding: 16px;
+ }
+
  body {
      font-family: 'League Spartan', sans-serif;
+     text-align: center;
  }
 
  .heading-intro p {
@@ -22,9 +27,43 @@
      color: hsl(300, 43%, 22%);
  }
 
+ .rating-container {
+     display: flex;
+     flex-flow: column;
+     /* justify-self: center; */
+     align-items: center;
+     background-color: antiquewhite;
+     padding-bottom: 16px;
+     margin: 16px;
+     border-radius: 8px;
+
+
+ }
+
+ .rating-container h2 {
+     color: hsl(300, 43%, 22%);
+ }
+
+ .ratings {
+
+     width: 100px;
+     /* margin-top: 16px; */
+     padding-right: 8px;
+     height: 40px;
+     padding-top: 16px;
+     background-image: url("../images/icon-star.svg");
+     background-repeat: space no-repeat;
+     background-position: center center;
+ }
+
  .verified-buyer-card {
      background-color: hsl(300, 43%, 22%);
      color: white;
+     border-radius: 8px;
+ }
+
+ .verified-buyer-card img {
+     border-radius: 50%;
  }
 
  .verified-buyer-card span {
