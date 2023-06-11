@@ -1,0 +1,32 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ body,
+ h1,
+ h2,
+ p {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     font-family: 'League Spartan', sans-serif;
+ }
+
+ .heading-intro p {
+     color: hsl(303, 10%, 53%);
+ }
+
+ h1 {
+     color: hsl(300, 43%, 22%);
+ }
+
+ .verified-buyer-card {
+     background-color: hsl(300, 43%, 22%);
+     color: white;
+ }
+
+ .verified-buyer-card span {
+     color: hsl(333, 80%, 67%);
+ }
