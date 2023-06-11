@@ -5,13 +5,15 @@
  body,
  h1,
  h2,
- p {
+ p,
+ figure,
+ blockquote {
      margin: 0;
      padding: 0;
  }
 
  main {
-     padding: 16px;
+     padding: 80px 16px;
  }
 
  body {
@@ -21,20 +23,27 @@
 
  .heading-intro p {
      color: hsl(303, 10%, 53%);
+     font-size: 1.1875rem;
+     line-height: 1.31;
+     font-weight: 500;
+     margin-bottom: 48px;
  }
 
  h1 {
      color: hsl(300, 43%, 22%);
+     font-size: 2.5rem;
+     line-height: .8;
+     font-weight: 700;
+     margin-bottom: 32px;
  }
 
  .rating-container {
      display: flex;
      flex-flow: column;
-     /* justify-self: center; */
      align-items: center;
-     background-color: antiquewhite;
+     background-color: #F7F2F7;
      padding-bottom: 16px;
-     margin: 16px;
+     margin-bottom: 16px;
      border-radius: 8px;
 
 
@@ -42,12 +51,13 @@
 
  .rating-container h2 {
      color: hsl(300, 43%, 22%);
+     font-size: 1.0625rem;
+     font-weight: 700;
  }
 
  .ratings {
 
      width: 100px;
-     /* margin-top: 16px; */
      padding-right: 8px;
      height: 40px;
      padding-top: 16px;
@@ -60,12 +70,45 @@
      background-color: hsl(300, 43%, 22%);
      color: white;
      border-radius: 8px;
+     text-align: start;
+     padding-top: 32px;
+     padding-bottom: 32px;
+     margin-top: 32px;
+ }
+
+ .verified-buyer-card figure {
+     margin-left: 32px;
+     margin-right: 32px;
+ }
+
+ .flex-div {
+     display: flex;
+     align-items: center;
  }
 
  .verified-buyer-card img {
+     width: 40px;
+     height: 40px;
      border-radius: 50%;
+     margin-right: 24px;
+ }
+
+ .verified-buyer-card figcaption {
+     font-size: 1.0625rem;
+     font-weight: 700;
  }
 
  .verified-buyer-card span {
      color: hsl(333, 80%, 67%);
+     display: inline-block;
+     margin-top: 6px;
+     font-size: 1.0625rem;
+     font-weight: 400;
+ }
+
+ .verified-buyer-card blockquote {
+     margin-top: 24px;
+     font-size: 1.0625rem;
+     line-height: 1.3;
+     font-weight: 500;
  }
